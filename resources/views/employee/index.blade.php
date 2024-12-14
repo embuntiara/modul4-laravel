@@ -28,17 +28,14 @@ scale=1.0">
                 <hr class="d-lg-none text-white-50">
 
                 <ul class="navbar-nav flex-row flex-wrap">
-                    <li class="nav-item col-2 col-md-auto"><a href="{{ 
-route('home') }}" class="nav-link">Home</a></li>
-                    <li class="nav-item col-2 col-md-auto"><a href="{{ 
-route('employees.index') }}" class="nav-link active">Employee
+                    <li class="nav-item col-2 col-md-auto"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
+                    <li class="nav-item col-2 col-md-auto"><a href="{{ route('employees.index') }}" class="nav-link active">Employee
                             List</a></li>
                 </ul>
 
                 <hr class="d-lg-none text-white-50">
 
-                <a href="{{ route('profile') }}" class="btn btn-outline
-light my-2 ms-md-auto"><i class="bi-person-circle me-1"></i> My
+                <a href="{{ route('profile') }}" class="btn btn-outlinelight my-2 ms-md-auto"><i class="bi-person-circle me-1"></i> My
                     Profile</a>
             </div>
         </div>
@@ -51,17 +48,13 @@ light my-2 ms-md-auto"><i class="bi-person-circle me-1"></i> My
             </div>
             <div class="col-lg-3 col-xl-2">
                 <div class="d-grid gap-2">
-                    <a href="{{ route('employees.create') }}" class="btn 
-btn-primary">Create Employee</a>
+                    <a href="{{ route('employees.create') }}" class="btn btn-primary">Create Employee</a>
                 </div>
             </div>
         </div>
         <hr>
         <div class="table-responsive border p-3 rounded-3">
-            <table class="table table-bordered table-hover table-striped 
- 
- 
-mb-0 bg-white">
+            <table class="table table-bordered table-hover table-striped mb-0 bg-white">
                 <thead>
                     <tr>
                         <th>First Name</th>
@@ -79,20 +72,16 @@ mb-0 bg-white">
                         <td>20</td>
                         <td>
                             <div class="d-flex">
-                                <a href="{{ route('employees.show', 
-['employee' => 1]) }}" class="btn btn-outline-dark btn-sm me-2"><i
+                                <a href="{{ route('employees.show', ['employee' => 1]) }}" class="btn btn-outline-dark btn-sm me-2"><i
                                         class="bi-person-lines-fill"></i></a>
-                                <a href="{{ route('employees.edit', 
-['employee' => 1]) }}" class="btn btn-outline-dark btn-sm me-2"><i
+                                <a href="{{ route('employees.edit', ['employee' => 1]) }}" class="btn btn-outline-dark btn-sm me-2"><i
                                         class="bi-pencil-square"></i></a>
 
                                 <div>
-                                    <form action="{{ 
-route('employees.destroy', ['employee' => 1]) }}" method="POST">
+                                    <form action="{{ route('employees.destroy', ['employee' => 1]) }}" method="POST">
                                         @csrf
                                         @method('delete')
-                                        <button type="submit" class="btn 
-btn-outline-dark btn-sm me-2"><i class="bi-trash"></i></button>
+                                        <button type="submit" class="btn btn-outline-dark btn-sm me-2"><i class="bi-trash"></i></button>
                                     </form>
                                 </div>
                             </div>

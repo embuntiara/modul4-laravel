@@ -1,11 +1,8 @@
 <?php
 
-use App\Http\Controllers\Controller;
-use App\Models\Employee;
-use App\Models\Position;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
@@ -59,7 +56,7 @@ class EmployeeController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
     }
 
     /**
